@@ -1,0 +1,561 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Wel{% endblock %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="apple-touch-icon" sizes="76x76" href="{{asset('./assets/img/apple-icon.png')}}">
+        <link rel="icon" type="image/png" href="{{asset('./assets/img/favicon.png')}}">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+        <!-- Nucleo Icons -->
+        <link href="{{asset('./assets/css/nucleo-icons.css')}}" rel="stylesheet" />
+        <link href="{{asset('./assets/css/nucleo-svg.css')}}" rel="stylesheet" />
+
+        <!-- Font Awesome Icons -->
+        <script src="{{asset('https://kit.fontawesome.com/42d5adcbca.js')}}" crossorigin="anonymous" defer></script>
+
+        <!-- Material Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+        <!-- CSS Files -->
+
+
+
+        <link id="pagestyle" href="{{asset('./assets/css/material-kit.css?v=3.0.4')}}" rel="stylesheet" />
+        {% block stylesheets %}
+            
+
+        {% endblock %}
+
+
+        {% block javascripts %}
+            
+
+        {% endblock %}
+    </head>
+
+<body>
+ 
+  <!-- Navbar -->
+  <!-- Navbar -->
+<div class="container position-sticky z-index-sticky top-0"><div class="row"><div class="col-12">
+  <nav class="navbar navbar-expand-lg  blur border-radius-xl top-0 z-index-fixed shadow position-absolute my-3 py-2 start-0 end-0 mx-4">
+    <div class="container-fluid px-0">
+      <a class="navbar-brand font-weight-bolder ms-sm-3" href="{{path('app_main')}}" rel="tooltip" title="Designed and Coded by Wall-E" data-placement="bottom" target="_blank">
+        CALYPSO AUTO ÉCOLE
+      </a>
+      <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon mt-2">
+          <span class="navbar-toggler-bar bar1"></span>
+          <span class="navbar-toggler-bar bar2"></span>
+          <span class="navbar-toggler-bar bar3"></span>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse pt-3 pb-2 py-lg-0 w-100" id="navigation">
+        <ul class="navbar-nav navbar-nav-hover ms-auto">
+          <li class="nav-item dropdown dropdown-hover mx-2">
+            <a class="nav-link ps-2 d-flex cursor-pointer align-items-center" id="dropdownMenuPages" data-bs-toggle="dropdown" aria-expanded="false">
+              
+              <span class="material-symbols-outlined">
+                school
+                </span>
+                 Formation
+              <img src="./assets/img/down-arrow-dark.svg" alt="down-arrow" class="arrow ms-auto ms-md-2">
+            </a>
+            <div class="dropdown-menu dropdown-menu-animation ms-n3 dropdown-md p-3 border-radius-xl mt-0 mt-lg-3" aria-labelledby="dropdownMenuPages">
+              <div class="d-none d-lg-block">
+                <h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1">
+                  Nos formations
+                </h6>
+    <a href="./pages/formation.html" class="dropdown-item border-radius-md">
+      <span>Code de la route</span>
+    </a>
+    
+    
+  </div>
+  
+  <div class="d-lg-none">
+    
+    <a href="./pages/formation.html" class="dropdown-item border-radius-md">
+      <span>Nos formations</span>
+    </a>
+    
+    
+  </div>
+  
+            </div>
+          </li>
+  
+          <li class="nav-item dropdown dropdown-hover mx-2">
+            <a class="nav-link ps-2 d-flex cursor-pointer align-items-center" id="dropdownMenuBlocks" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="material-symbols-sharp">
+                done_outline
+                </span>
+              Résultats
+              <img src="./assets/img/down-arrow-dark.svg" alt="down-arrow" class="arrow ms-auto ms-md-2">
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-animation dropdown-md dropdown-md-responsive p-3 border-radius-lg mt-0 mt-lg-3" aria-labelledby="dropdownMenuBlocks">
+              <div class="d-none d-lg-block">
+    <li class="nav-item dropdown dropdown-hover dropdown-subitem">
+      <a class="dropdown-item py-2 ps-3 border-radius-md" href="https://www.securite-routiere.gouv.fr/resultats-du-permis-de-conduire#/step-connexion">
+        <div class="w-100 d-flex align-items-center justify-content-between">
+          <div>
+            <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">Consultez vos résultats</h6>
+            <span class="text-sm">Accéder à vos résultats à l'épreuve du permis de conduire</span>
+          </div>
+          
+        </div>
+      </a>
+      
+    </li>
+  
+    
+  
+    
+  
+    
+  
+    
+  </div>
+  
+  <div class="row d-lg-none">
+    <div class="col-md-12">
+      <div class="d-flex mb-2">
+        <div class="icon h-10 me-3 d-flex mt-1">
+          
+        </div>
+        <div class="w-100 d-flex align-items-center justify-content-between">
+          <div>
+            <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">consultez vos résultats</h6>
+          </div>
+        </div>
+      </div>
+      <a class="dropdown-item ps-3 border-radius-md mb-1" href="https://www.securite-routiere.gouv.fr/resultats-du-permis-de-conduire#/step-connexion">
+        Accéder à vos résultats à l'épreuve du permis de conduire
+      </a>
+
+    </div>
+  </div>
+  
+            </ul>
+          </li>
+  
+          <li class="nav-item dropdown dropdown-hover mx-2">
+            <a class="nav-link ps-2 d-flex cursor-pointer align-items-center" id="dropdownMenuDocs" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="material-symbols-outlined">
+                call
+                </span>
+              Contact
+              <img src="./assets/img/down-arrow-dark.svg" alt="down-arrow" class="arrow ms-auto ms-md-2">
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-animation dropdown-md dropdown-md-responsive mt-0 mt-lg-3 p-3 border-radius-lg" aria-labelledby="dropdownMenuDocs">
+              <div class="d-none d-lg-block">
+    <ul class="list-group">
+      <li class="nav-item list-group-item border-0 p-0">
+        <a class="dropdown-item py-2 ps-3 border-radius-md" href="./pages/contact-us.php">
+          <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">Où nous trouver</h6>
+          <span class="text-sm">poser nous une question nous y répondrons dans les meilleurs délais</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="row d-lg-none">
+    <div class="col-md-12 g-0">
+      <a class="dropdown-item py-2 ps-3 border-radius-md" href="./pages/contact-us.php">
+        <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">Où nous trouver</h6>
+        <span class="text-sm">poser nous une question nous y répondrons dans les meilleurs délais</span>
+      </a>
+    </div>
+  </div>
+  
+            </ul>
+          </li>
+          
+          <li class="nav-item my-auto ms-3 ms-lg-0">
+            
+            <a  href = "tel:+0130304295" class="btn btn-sm  bg-gradient-primary  mb-0 me-1 mt-2 mt-md-0">01.30.30.42.95</a>
+            
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+<!-- End Navbar -->
+</div></div></div>
+
+  
+
+  
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="header-2">
+  <div class="page-header min-vh-75 relative" style="background-image: url('./assets/img/back2.jpg')">
+    <span class="mask bg-gradient-primary opacity-1"></span>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7 text-center mx-auto">
+          <h1 class="text-white pt-3 mt-n5">CALYPSO AUTO ÉCOLE</h1>
+          <p class="lead text-white mt-3">"Calypso auto école, je ne pouvais rêver mieux"</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6">
+
+<section class="pt-3 pb-4" id="count-stats">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-9 mx-auto py-3">
+        <div class="row">
+          <div class="col-md-4 position-relative">
+            <div class="p-3 text-center">
+              
+              
+              <h5 class="mt-3">Permis B Manuel pack 20h</h5>
+              <p class="text-sm  font-weight-normal ">
+– Démarche administratives<br>
+– Evaluation de départ sur logiciel<br>
+– Fiche de suivi +livret d’apprentissage<br>
+– Forfait code collectif valable 6 mois (test illimités)<br>
+– 20 leçons de conduite (55minutes effectives)<br>
+– Présentation pratique – Accompagnement OFFERT</p>
+<h1 class="text-gradient text-primary"><span id="state1" countTo="1200">0</span>€</h1>
+            </div>
+            <hr class="vertical dark">
+          </div>
+          <div class="col-md-4 position-relative">
+            <div class="p-3 text-center">
+              
+              <h5 class="mt-3">Permis Automatique <br>Pack 13h</h5>
+              
+              <p class="text-sm font-weight-normal">
+– Démarche administratives<br>
+– Evaluation de départ sur logiciel<br>
+– Fiche de suivi +livret d’apprentissage<br>
+– Forfait code collectif valable 6 mois (test illimités)<br>
+– 13 leçons de conduite (55 min effectives)<br>
+– Présentation pratique – Accompagnement OFFERT</p>
+              <h1 class="text-gradient text-primary"> <span id="state2" countTo="900">0</span>€</h1>
+            </div>
+            <hr class="vertical dark">
+          </div>
+          <div class="col-md-4">
+            <div class="p-3 text-center">
+              
+              <h5 class="mt-3">Permis B AAC</h5>
+              <p class="text-sm font-weight-normal">– Démarche administratives<br>
+– Evaluation de départ sur logiciel<br>
+– Fiche de suivi + livret d’apprentissage<br>
+– Forfait code collectif valable 6 mois (test illimités)<br>
+– 20 leçons de conduite (55minutes effectives)<br>
+– Présentation pratique – Accompagnement OFFERT<br>
+– 1er RDV 1500 km > 100€<br>
+– 2e RDV 3000 km  > 100€</p>
+<h1 class="text-gradient text-primary"><span id="state3" countTo="1250">0</span>€</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="my-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 col-12 my-auto">
+            <h3 class="text-gradient text-primary mb-0">PERMIS B</h3>
+            <h3> Manuel et Automatique</h3>
+            <p class="pe-md-5 mb-4">
+              Nous proposons des formations au permis B, sur boite manuelle ou automatique avec une équipe de moniteurs diplômés et à l'écoute.
+              Nos cours de conduite à l'auto-école Calypso s'adressent à tous types de profils : débutant, confirmé, récupération.
+            </p>
+            <div class="github-buttons">
+              <a href="./pages/contact-us.php" target="_blank" class="btn bg-gradient-primary mb-5 mb-sm-0">S'inscrire</a>
+              <div class="github-button">
+                <span></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-12 my-auto">
+            <a href="https://www.creative-tim.com/product/material-kit-pro?ref=index-mk2">
+              <img class="w-100 " src="./assets/img/picto/renault_20.png" alt="" data-lazy-src="https://autoecoledeseauxvives78.com/wp-content/uploads/2018/08/voiture-auto-ecole-des-eaux-vives-heure-evolution-voiture.png" data-ll-status="loaded">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+
+<section class="py-7">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 mx-auto text-center">
+        <h2 class="mb-0">Ils nous ont fait confiance</h2>
+        <h2 class="text-gradient text-primary mb-3">1,679,477+ web developers</h2>
+        <p class="lead">De nombreuses personnes jeunes comme âgée sont passées par notre auto école et voici leurs retours </p>
+      </div>
+    </div>
+    <div class="row mt-6">
+      <div class="col-lg-4 col-md-8">
+        <div class="card card-plain">
+          <div class="card-body">
+            <div class="author">
+              <div class="name">
+                <h6 class="mb-0 font-weight-bolder">Kassandra Marseille</h6>
+                <div class="stats">
+                  <i class="far fa-clock"></i> il y a 5 mois
+                </div>
+              </div>
+            </div>
+            <p class="mt-4">"Je suis arrivée dans cette auto école à la suite d’une expérience de conduite catastrophique à Paris et j’ai été agréablement surprise par la pédagogie de cette équipe. Il ont réussi à me redonner confiance en voiture et à effacer les mauvais réflexes que j’avais acquis avant. J’ai eu mon examen du premier coup après 10h de conduite avec eux. Merci infiniment pour l’aide !!"</p>
+            <div class="rating mt-3">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-8 ms-md-auto">
+        <div class="card bg-gradient-primary">
+          <div class="card-body">
+            <div class="author align-items-center">
+              <div class="name">
+                <h6 class="text-white mb-0 font-weight-bolder">Sofiane Ouadi</h6>
+                <div class="stats text-white">
+                  <i class="far fa-clock"></i> il y a 8 mois
+                </div>
+              </div>
+            </div>
+            <p class="mt-4 text-white">"Il y a vraiment rien à dire sur cette auto-école merci encore à Corinne et tous ses moniteurs très bonne entente et très bonne compréhension. Je les remercie de m’avoir accompagné tout au long de mes heures c’est maintenant grâce à eux et grâce à moi aussi que j’ai réussi à avoir mon permis en 20 heures 👏🏽"</p>
+            <div class="rating mt-3">
+              <i class="fas fa-star text-white"></i>
+              <i class="fas fa-star text-white"></i>
+              <i class="fas fa-star text-white"></i>
+              <i class="fas fa-star text-white"></i>
+              <i class="fas fa-star text-white"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-8">
+        <div class="card card-plain">
+          <div class="card-body">
+            <div class="author">
+              <div class="name">
+                <h6 class="mb-0 font-weight-bolder">Vaness Vqz</h6>
+                <div class="stats">
+                  <i class="far fa-clock"></i> il y a 7 mois
+                </div>
+              </div>
+            </div>
+            <p class="mt-4">"Auto école au top !!!! Merci à vous Corinne, vero et les moniteurs pour votre patience et votre professionnalisme… Permis en poche rapidement et du premier coup 😁😁 je recommande FORTEMENT …"</p>
+            <div class="rating mt-3">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <hr class="horizontal dark my-5">
+    
+</section>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+  
+
+  <footer class="footer pt-5 mt-5">
+  <div class="container">
+    <div class=" row">
+      <div class="col-md-3 mb-4 ms-auto">
+        <div>
+          <a href="https://www.creative-tim.com/product/material-kit">
+            <img src="./assets/img/logo-ct-dark.png" class="mb-3 footer-logo" alt="main_logo">
+          </a>
+          <h6 class="font-weight-bolder mb-4">Auto école Calypso</h6>
+        </div>
+        <div>
+          <ul class="d-flex flex-row ms-n3 nav">
+            <li class="nav-item">
+              <a class="nav-link pe-1" href="https://www.facebook.com/CreativeTim" target="_blank">
+                <i class="fab fa-facebook text-lg opacity-8"></i>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link pe-1" href="https://twitter.com/creativetim" target="_blank">
+                <i class="fab fa-twitter text-lg opacity-8"></i>
+              </a>
+            </li>
+
+
+            <li class="nav-item">
+              <a class="nav-link pe-1" href="https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w" target="_blank">
+                <i class="fab fa-youtube text-lg opacity-8"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+
+      <div class="col-md-2 col-sm-6 col-6 mb-4">
+        <div>
+          <h6 class="text-sm">Auto école</h6>
+          <ul class="flex-column ms-n3 nav">
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/contact-us.php" target="_blank">
+                Contact
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.securite-routiere.gouv.fr/resultats-du-permis-de-conduire#/step-connexion" target="_blank">
+                résultats permis
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.creative-tim.com/blog" target="_blank">
+                Nos formations
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-2 col-sm-6 col-6 mb-4">
+        <div>
+          <h6 class="text-sm">Formations</h6>
+          <ul class="flex-column ms-n3 nav">
+            <li class="nav-item">
+              <a class="nav-link" href="https://iradesign.io/" target="_blank">
+                Permis B - manuel
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.creative-tim.com/bits" target="_blank">
+                Permis B - Automatique
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.creative-tim.com/affiliates/new" target="_blank">
+                Permis AAC
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-2 col-sm-6 col-6 mb-4">
+        <div>
+          <h6 class="text-sm">Besoin d'aide</h6>
+          <ul class="flex-column ms-n3 nav">
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/contact-us.php" target="_blank">
+                Nous contacter
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/contact-us.php" target="_blank">
+                En savoir plus
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/contact-us.php" target="_blank">
+                Localisation
+              </a>
+            </li>
+
+            
+
+          </ul>
+        </div>
+      </div>
+
+      
+
+      <div class="col-12">
+        <div class="text-center">
+          <p class="text-dark my-4 text-sm font-weight-normal">
+            Tous les droits sont réservés. Droits d'auteur © <script>document.write(new Date().getFullYear())</script> Auto école Calypso <a href="https://github.com/WallyDD-pixel" target="_blank">by Wall-E</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+        <!--   Core JS Files   -->
+<script src="{{asset('./assets/js/core/popper.min.js')}}" type="text/javascript"></script>
+<script src="{{asset('./assets/js/core/bootstrap.min.js')}}" type="text/javascript"></script>
+<script src="{{asset('./assets/js/plugins/perfect-scrollbar.min.js')}}"></script>
+<!--  Plugin for TypedJS, full documentation here: https://github.com/inorganik/CountUp.js -->
+<script src="{{asset('./assets/js/plugins/countup.min.js')}}"></script>
+<script src="{{asset('./assets/js/plugins/choices.min.js')}}"></script>
+<script src="{{asset('./assets/js/plugins/prism.min.js')}}"></script>
+<script src="{{asset('./assets/js/plugins/highlight.min.js')}}"></script>
+<!--  Plugin for Parallax, full documentation here: https://github.com/dixonandmoe/rellax -->
+<script src="{{asset('./assets/js/plugins/rellax.min.js')}}"></script>
+<!--  Plugin for TiltJS, full documentation here: https://gijsroge.github.io/tilt.js/ -->
+<script src="{{asset('./assets/js/plugins/tilt.min.js')}}"></script>
+<!--  Plugin for Selectpicker - ChoicesJS, full documentation here: https://github.com/jshjohnson/Choices -->
+<script src="{{asset('./assets/js/plugins/choices.min.js')}}"></script>
+<!--  Plugin for Parallax, full documentation here: https://github.com/wagerfield/parallax  -->
+<script src="{{asset('./assets/js/plugins/parallax.min.js')}}"></script>
+<!--  Google Maps Plugin    -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTTfWur0PDbZWPr7Pmq8K3jiDp0_xUziI"></script>
+<script src="{{asset('./assets/js/material-kit.min.js?v=3.0.4')}}" type="text/javascript"></script>
+<script src="{{asset('./assets/js/textos.js')}}"type="text/javascript"></script>
+</body>
+
+</html>

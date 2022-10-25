@@ -2,18 +2,92 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
-        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+        <title>{% block title %}Wel{% endblock %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="apple-touch-icon" sizes="76x76" href="{{asset('./assets/img/apple-icon.png')}}">
+        <link rel="icon" type="image/png" href="{{asset('./assets/img/favicon.png')}}">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+        <!-- Nucleo Icons -->
+        <link href="{{asset('./assets/css/nucleo-icons.css')}}" rel="stylesheet" />
+        <link href="{{asset('./assets/css/nucleo-svg.css')}}" rel="stylesheet" />
+
+        <!-- Font Awesome Icons -->
+        <script src="{{asset('https://kit.fontawesome.com/42d5adcbca.js')}}" crossorigin="anonymous" defer></script>
+
+        <!-- Material Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+        <!-- CSS Files -->
+
+
+
+        <link id="pagestyle" href="{{asset('./assets/css/material-kit.css?v=3.0.4')}}" rel="stylesheet" />
         {% block stylesheets %}
-            {{ encore_entry_link_tags('app') }}
+            
+
         {% endblock %}
 
+
         {% block javascripts %}
-            {{ encore_entry_script_tags('app') }}
+            
+
         {% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
+        {% block body %}
+        <!--   Core JS Files   -->
+<script src="{{asset('./assets/js/core/popper.min.js')}}" type="text/javascript"></script>
+<script src="{{asset('./assets/js/core/bootstrap.min.js')}}" type="text/javascript"></script>
+<script src="{{asset('./assets/js/plugins/perfect-scrollbar.min.js')}}"></script>
+
+
+
+
+<!--  Plugin for TypedJS, full documentation here: https://github.com/inorganik/CountUp.js -->
+<script src="{{asset('./assets/js/plugins/countup.min.js')}}"></script>
+
+
+
+
+
+<script src="{{asset('./assets/js/plugins/choices.min.js')}}"></script>
+
+
+
+<script src="{{asset('./assets/js/plugins/prism.min.js')}}"></script>
+<script src="{{asset('./assets/js/plugins/highlight.min.js')}}"></script>
+
+
+
+<!--  Plugin for Parallax, full documentation here: https://github.com/dixonandmoe/rellax -->
+<script src="{{asset('./assets/js/plugins/rellax.min.js')}}"></script>
+<!--  Plugin for TiltJS, full documentation here: https://gijsroge.github.io/tilt.js/ -->
+<script src="{{asset('./assets/js/plugins/tilt.min.js')}}"></script>
+<!--  Plugin for Selectpicker - ChoicesJS, full documentation here: https://github.com/jshjohnson/Choices -->
+<script src="{{asset('./assets/js/plugins/choices.min.js')}}"></script>
+
+
+<!--  Plugin for Parallax, full documentation here: https://github.com/wagerfield/parallax  -->
+<script src="{{asset('./assets/js/plugins/parallax.min.js')}}"></script>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Control Center for Material UI Kit: parallax effects, scripts for the example pages etc -->
+<!--  Google Maps Plugin    -->
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTTfWur0PDbZWPr7Pmq8K3jiDp0_xUziI"></script>
+<script src="{{asset('./assets/js/material-kit.min.js?v=3.0.4')}}" type="text/javascript"></script>
+        {% endblock %}
     </body>
 </html>
